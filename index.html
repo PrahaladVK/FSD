@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prahalad Krishnan | Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent);
+        }
+
+        h2 {
+            color: var(--accent);
+            border-left: 4px solid var(--accent);
+            padding-left: 1rem;
+            margin-top: 2rem;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            opacity: 0.8;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        .project-card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border: 1px solid var(--border);
+        }
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.5rem;
+            list-style-type: "▹ ";
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            padding: 2rem 0;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Prahalad Vidwan Krishnan</h1>
+            <p style="font-size: 1.2rem;">B.Tech Computer Science & Engineering</p>
+            <p style="color: var(--text-secondary);">Cybersecurity Enthusiast | Azure AZ-104</p>
+
+            <p>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/PrahaladVK">PrahaladVK</a> | 
+                <strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/prahalad-krishnan-a972382b4/">Profile</a>
+            </p>
+        </header>
+
+        <section>
+            <h2>About Me</h2>
+            <p>
+                I am a highly motivated Computer Science student specializing in
+                Cybersecurity. I have experience in Python, JavaScript, Full Stack
+                Development, Azure Administration, Computer Networks, Object Oriented
+                Programming with C++, and Data Structures & Algorithms.
+            </p>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>C++</li>
+                <li>JavaScript</li>
+                <li>Full Stack Development</li>
+                <li>Data Structures & Algorithms</li>
+                <li>Azure Administration (AZ-104)</li>
+                <li>Computer Networks</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+
+            <div class="project-card">
+                <h3>2 Factor Authentication</h3>
+                <p>A secure authentication system using OTP and validation techniques.</p>
+                <a href="https://github.com/PrahaladVK/2-Factor-Authentication">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Brawler – Fighting Game</h3>
+                <p>A 2D fighting game featuring player movement and combat mechanics.</p>
+                <a href="https://github.com/PrahaladVK/Brawler---Fighting-Game">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Smart Aquaponics Monitoring System</h3>
+                <p>An IoT-based monitoring system for aquaponics environments.</p>
+                <a href="https://github.com/PrahaladVK/Smart-Aquaponics-Monitoring-System">View Project</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <ul>
+                <li>Python – HackerRank</li>
+                <li>Problem Solving – HackerRank</li>
+                <li>Java – HackerRank</li>
+                <li>CSS – HackerRank</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Languages</h2>
+            <p>English, Hindi, Japanese</p>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p><strong>Location:</strong> Pune, India</p>
+            <p><strong>Phone:</strong> 9518545390</p>
+            <p><strong>Email:</strong> <a href="mailto:1032220256@mitwpu.edu.in">1032220256@mitwpu.edu.in</a></p>
+        </section>
+
+        <footer>
+            <hr>
+            <p>© 2026 Prahalad Krishnan</p>
+        </footer>
+    </div>
+
+</body>
+</html>
