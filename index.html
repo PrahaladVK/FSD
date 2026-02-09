@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- External JS -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="form-container">
+
+    <h2 id="title">Student Registration Form</h2>
+
+    <form id="regForm">
+
+        <div class="field">
+            <label>Username</label>
+            <input type="text" id="username" class="inputField">
+        </div>
+
+        <div class="field">
+            <label>Email</label>
+            <input type="text" id="email" class="inputField">
+        </div>
+
+        <div class="field">
+            <label>Phone Number</label>
+            <input type="text" id="phone" class="inputField">
+        </div>
+
+        <div class="field">
+            <label>Password</label>
+            <input type="password" id="password" class="inputField">
+        </div>
+
+        <div class="field">
+            <label>Confirm Password</label>
+            <input type="password" id="confirmPassword" class="inputField">
+        </div>
+
+        <button type="button" id="submitBtn" onclick="validateForm()">Register</button>
+    </form>
+
+    <p id="message"></p>
+
+    <!-- DOM Manipulation Section -->
+    <div class="dom-section">
+        <img id="myImage"
+             src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Profile_avatar_placeholder_large.png/256px-Profile_avatar_placeholder_large.png"
+             alt="Student Image">
+
+        <br>
+
+        <button onclick="changeImage()">Change Image</button>
+        <button onclick="addNode()">Add Text</button>
+        <button onclick="deleteNode()">Delete Text</button>
+
+        <div id="container"></div>
+    </div>
+
+</div>
+
+</body>
+</html>
