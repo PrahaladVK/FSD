@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<title>Student Login</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+<div class="form-container">
+
+<h2>Student Login</h2>
+
+<form id="loginForm" action="login.php" method="POST">
+
+<div class="field">
+<label>Email</label>
+<input type="text" id="loginEmail" name="email" required>
+</div>
+
+<div class="field">
+<label>Password</label>
+<input type="password" id="loginPassword" name="password" required>
+</div>
+
+<button type="submit">Login</button>
+
+<p class="switch">
+Don't have an account?
+<a href="signup.html">Sign Up</a>
+</p>
+
+<p class="switch">
+<a href="index.html">Back to Home</a>
+</p>
+
+</form>
+
+<p id="loginMessage"></p>
+
+</div>
+
+</body>
+</html>
